@@ -1,3 +1,20 @@
+//clock format switcher
+const formatSwitchBtn = document.querySelector(".format-switcher-btn");
+
+formatSwitchBtn.addEventListener("click", () => {
+
+    formatSwitchBtn.classList.toggle("active");
+
+    var formatValue = formatSwitchBtn.getAttribute("data-format");
+
+    if(formatValue === "12"){
+        formatSwitchBtn.setAttribute("data-format", "24")
+    }
+    else{
+        formatSwitchBtn.setAttribute("data-format", "12")
+    }
+});
+
 // Get current time in javascript
 
 function clock() {
@@ -15,7 +32,11 @@ function clock() {
     }
 
 //Set the 12-hour clock format
-    hours = hours > 12 ? hours % 12 : hours;
+    var formatValue = formatSwitchBtn.getAttribute("data-format");
+
+    if(formatValue === "12"){
+        hours = hours > 12 ? hours % 12 : hours;
+    }
 
 
 //Add the "0" for the time values Lower than 10
@@ -50,3 +71,7 @@ document.querySelector(".month-name").innerHTML = monthName;
 document.querySelector(".day-name").innerHTML = dayName;
 document.querySelector(".day-number").innerHTML = dayNumber;
 document.querySelector(".year").innerHTML = year;
+
+
+
+
