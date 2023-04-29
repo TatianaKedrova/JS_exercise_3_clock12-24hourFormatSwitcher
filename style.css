@@ -37,7 +37,7 @@ body{
     align-items: center;
 }
 
-.hour, .dots, .minutes{
+.hours, .dots, .minutes{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,7 @@ body{
     line-height: 125px;
 }
 
-.hour, .minutes{
+.hours, .minutes{
     font-size: 6.5em;
     width: 125px;
 }
@@ -56,7 +56,7 @@ body{
     color: #929292;
 }
 
-.hour{
+.hours{
     background: -webkit-linear-gradient(90deg, #634dff, #5fd4ff);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -108,6 +108,6 @@ body{
 }
 
 .day-name, .day-number, .year{
-    margin-left: 10px;
+    margin-left: 3px;
 
 }
