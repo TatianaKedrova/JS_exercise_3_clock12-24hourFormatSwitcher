@@ -31,9 +31,6 @@ function clock() {
         seconds = "0" + seconds;
     }
 
-
-
-
     document.querySelector(".hours").innerHTML = hours;
     document.querySelector(".minutes").innerHTML = minutes;
     document.querySelector(".seconds").innerHTML = seconds;
@@ -41,3 +38,15 @@ function clock() {
 }
 
 var updateClock = setInterval(clock, 1000);
+
+//Get the current date 
+var today = new Date();
+const dayNumber = today.getDate();
+const year = today.getFullYear();
+const dayName = today.toLocaleString("default", {weekday: "long"});
+const monthName = today.toLocaleString("default", {month: "short"});
+
+document.querySelector(".month-name").innerHTML = monthName;
+document.querySelector(".day-name").innerHTML = dayName;
+document.querySelector(".day-number").innerHTML = dayNumber;
+document.querySelector(".year").innerHTML = year;
