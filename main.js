@@ -70,7 +70,7 @@ const monthName = today.toLocaleString("default", {month: "short"});
 document.querySelector(".month-name").innerHTML = monthName;
 document.querySelector(".day-name").innerHTML = dayName;
 document.querySelector(".day-number").innerHTML = dayNumber;
-//document.querySelector(".year").innerHTML = year;
+document.querySelector(".year").innerHTML = year;
 
 //Dot menu toggle
 const dotmenuBtn = document.querySelector(".dot-menu-btn");

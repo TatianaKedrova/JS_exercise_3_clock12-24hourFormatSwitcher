@@ -29,9 +29,6 @@ body{
     flex-direction: column;
 }
 
-.digital-clock:before
-
-
 .time{
     position: relative;
     display: flex;
