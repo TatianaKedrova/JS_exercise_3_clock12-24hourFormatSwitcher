@@ -80,7 +80,6 @@ dotmenuBtn.addEventListener("click", () => {
     dotMenu.classList.toggle("active");
 });
 
-
 document.addEventListener("click", (e) => {
     if(e.target.id !== "active-menu"){
         dotMenu.classList.remove("active");
